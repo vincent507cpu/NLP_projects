@@ -28,7 +28,7 @@ class BahdanauAttention(tf.keras.layers.Layer):
         定义score
         your code
         """
-        score = self.V*tf.nn.tanh(self.W1(enc_output)+self.W2(hidden_with_time_axis))
+        score = self.V(tf.nn.tanh(self.W1(enc_output)+self.W2(hidden_with_time_axis)))
         # Calculate attention distribution
         """
         归一化score，得到attn_dist
