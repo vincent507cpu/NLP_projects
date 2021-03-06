@@ -1,0 +1,107 @@
+(base) nlp@workstation:~/Documents/projects/qa$ /home/nlp/miniconda3/envs/nlp/bin/python /home/nlp/Documents/projects/qa/seq2seq_pgn_tf2/bin/main.py
+2021-03-06 12:00:55.720847: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-03-06 12:00:56.651136: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-03-06 12:00:56.651622: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-03-06 12:00:56.703503: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-06 12:00:56.703990: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:08:00.0 name: GeForce RTX 2060 computeCapability: 7.5
+coreClock: 1.68GHz coreCount: 30 deviceMemorySize: 5.79GiB deviceMemoryBandwidth: 312.97GiB/s
+2021-03-06 12:00:56.704038: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-06 12:00:56.704466: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties: 
+pciBusID: 0000:09:00.0 name: GeForce RTX 2060 computeCapability: 7.5
+coreClock: 1.68GHz coreCount: 30 deviceMemorySize: 5.79GiB deviceMemoryBandwidth: 312.97GiB/s
+2021-03-06 12:00:56.704480: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-03-06 12:00:56.706157: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-03-06 12:00:56.706196: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-03-06 12:00:56.706814: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-03-06 12:00:56.706940: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-03-06 12:00:56.718419: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-03-06 12:00:56.718870: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-03-06 12:00:56.718957: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-03-06 12:00:56.719050: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-06 12:00:56.719567: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-06 12:00:56.720026: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-06 12:00:56.720479: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-06 12:00:56.720901: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1
+  0%|                                                                                                                                                                                                                                                                                                                                                              | 0/20000 [00:00<?, ?it/s]Building the model ...
+2021-03-06 12:00:56.724460: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-03-06 12:00:56.724678: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-03-06 12:00:56.724799: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-06 12:00:56.725268: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:08:00.0 name: GeForce RTX 2060 computeCapability: 7.5
+coreClock: 1.68GHz coreCount: 30 deviceMemorySize: 5.79GiB deviceMemoryBandwidth: 312.97GiB/s
+2021-03-06 12:00:56.725284: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-03-06 12:00:56.725305: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-03-06 12:00:56.725313: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-03-06 12:00:56.725321: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-03-06 12:00:56.725330: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-03-06 12:00:56.725338: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-03-06 12:00:56.725346: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-03-06 12:00:56.725355: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-03-06 12:00:56.725398: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-06 12:00:56.725853: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-06 12:00:56.726281: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-03-06 12:00:56.726560: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-03-06 12:00:57.309199: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-03-06 12:00:57.309231: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-03-06 12:00:57.309240: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-03-06 12:00:57.309441: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-06 12:00:57.309907: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-06 12:00:57.310347: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-06 12:00:57.310756: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 5154 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2060, pci bus id: 0000:08:00.0, compute capability: 7.5)
+Creating the vocab ...
+max_size of vocab was specified as 30000; we now have 30000 words. Stopping reading.
+Finished constructing vocabulary of 30000 total words. Last word added: 肝病毒属
+Creating the batcher ...
+Creating the checkpoint manager
+Model restored
+2021-03-06 12:00:57.890790: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2021-03-06 12:00:57.910356: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 3793125000 Hz
+2021-03-06 12:00:57.991422: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-03-06 12:01:00.207074: E tensorflow/stream_executor/dnn.cc:616] CUDNN_STATUS_EXECUTION_FAILED
+in tensorflow/stream_executor/cuda/cuda_dnn.cc(1859): 'cudnnRNNForwardTraining( cudnn.handle(), rnn_desc.handle(), model_dims.max_seq_length, input_desc.handles(), input_data.opaque(), input_h_desc.handle(), input_h_data.opaque(), input_c_desc.handle(), input_c_data.opaque(), rnn_desc.params_handle(), params.opaque(), output_desc.handles(), output_data->opaque(), output_h_desc.handle(), output_h_data->opaque(), output_c_desc.handle(), output_c_data->opaque(), workspace.opaque(), workspace.size(), reserve_space.opaque(), reserve_space.size())'
+2021-03-06 12:01:00.207219: W tensorflow/core/framework/op_kernel.cc:1763] OP_REQUIRES failed at cudnn_rnn_ops.cc:1521 : Internal: Failed to call ThenRnnForward with model config: [rnn_mode, rnn_input_mode, rnn_direction_mode]: 3, 0, 0 , [num_layers, input_size, num_units, dir_count, max_seq_length, batch_size, cell_num_units]: [1, 256, 128, 1, 115, 3, 0] 
+  0%|                                                                                                                                                                                                                                                                                                                                                              | 0/20000 [00:03<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/nlp/Documents/projects/qa/seq2seq_pgn_tf2/bin/main.py", line 113, in <module>
+    main()
+  File "/home/nlp/Documents/projects/qa/seq2seq_pgn_tf2/bin/main.py", line 109, in main
+    predict_result(params)
+  File "/home/nlp/Documents/projects/qa/seq2seq_pgn_tf2/train_eval_test.py", line 84, in predict_result
+    results = test_and_save(params)
+  File "/home/nlp/Documents/projects/qa/seq2seq_pgn_tf2/train_eval_test.py", line 76, in test_and_save
+    trial = next(gen)
+  File "/home/nlp/Documents/projects/qa/seq2seq_pgn_tf2/train_eval_test.py", line 67, in test
+    yield beam_decode(model, batch, vocab, params)
+  File "/home/nlp/Documents/projects/qa/seq2seq_pgn_tf2/test_helper.py", line 110, in beam_decode
+    enc_outputs, state = model.call_encoder(enc_input)
+  File "/home/nlp/Documents/projects/qa/seq2seq_pgn_tf2/models/pgn.py", line 32, in call_encoder
+    enc_output, enc_hidden = self.encoder(enc_inp, enc_hidden)
+  File "/home/nlp/miniconda3/envs/nlp/lib/python3.8/site-packages/tensorflow/python/keras/engine/base_layer.py", line 1012, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/nlp/Documents/projects/qa/seq2seq_pgn_tf2/encoders/rnn_encoder.py", line 25, in call
+    output, forward_state, backward_state = self.bigru(x, initial_state=hidden)
+  File "/home/nlp/miniconda3/envs/nlp/lib/python3.8/site-packages/tensorflow/python/keras/layers/wrappers.py", line 601, in __call__
+    return super(Bidirectional, self).__call__(inputs, **kwargs)
+  File "/home/nlp/miniconda3/envs/nlp/lib/python3.8/site-packages/tensorflow/python/keras/engine/base_layer.py", line 1012, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/nlp/miniconda3/envs/nlp/lib/python3.8/site-packages/tensorflow/python/keras/layers/wrappers.py", line 652, in call
+    y = self.forward_layer(forward_inputs,
+  File "/home/nlp/miniconda3/envs/nlp/lib/python3.8/site-packages/tensorflow/python/keras/layers/recurrent.py", line 717, in __call__
+    return super(RNN, self).__call__(inputs, **kwargs)
+  File "/home/nlp/miniconda3/envs/nlp/lib/python3.8/site-packages/tensorflow/python/keras/engine/base_layer.py", line 1012, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/nlp/miniconda3/envs/nlp/lib/python3.8/site-packages/tensorflow/python/keras/layers/recurrent_v2.py", line 470, in call
+    last_output, outputs, runtime, states = self._defun_gru_call(
+  File "/home/nlp/miniconda3/envs/nlp/lib/python3.8/site-packages/tensorflow/python/keras/layers/recurrent_v2.py", line 541, in _defun_gru_call
+    last_output, outputs, new_h, runtime = gpu_gru(**gpu_gru_kwargs)
+  File "/home/nlp/miniconda3/envs/nlp/lib/python3.8/site-packages/tensorflow/python/keras/layers/recurrent_v2.py", line 700, in gpu_gru
+    outputs, h, _, _ = gen_cudnn_rnn_ops.cudnn_rnn(
+  File "/home/nlp/miniconda3/envs/nlp/lib/python3.8/site-packages/tensorflow/python/ops/gen_cudnn_rnn_ops.py", line 99, in cudnn_rnn
+    return cudnn_rnn_eager_fallback(
+  File "/home/nlp/miniconda3/envs/nlp/lib/python3.8/site-packages/tensorflow/python/ops/gen_cudnn_rnn_ops.py", line 179, in cudnn_rnn_eager_fallback
+    _result = _execute.execute(b"CudnnRNN", 4, inputs=_inputs_flat,
+  File "/home/nlp/miniconda3/envs/nlp/lib/python3.8/site-packages/tensorflow/python/eager/execute.py", line 59, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+tensorflow.python.framework.errors_impl.InternalError: Failed to call ThenRnnForward with model config: [rnn_mode, rnn_input_mode, rnn_direction_mode]: 3, 0, 0 , [num_layers, input_size, num_units, dir_count, max_seq_length, batch_size, cell_num_units]: [1, 256, 128, 1, 115, 3, 0]  [Op:CudnnRNN]
